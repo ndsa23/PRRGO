@@ -1,0 +1,53 @@
+* {
+  font-size: 1.025em;
+}
+#heading {
+  margin: 30px;
+}
+#cy {
+  width: auto;
+  height: 1000px;
+}
+
+#go-table {
+  width: 90%;
+  position: fixed;
+  bottom: 0;
+  margin-left: 5%;
+  background-color: #FFF;
+}
+th {
+  width: 1.5em;
+}
+#keyword-input-div {
+  margin: 30px;
+  max-width: 500px;
+  background-color: #FFF;
+  padding: 10px;
+}
+#mol-func {
+  background-color: #3B185F;
+}
+#biol-proc {
+  background-color: #A12568;
+}
+#cell-comp {
+  background-color: #539165;
+}
+#legend {
+  color:#FFF;
+  width: fit-content;
+  margin: 20px;
+  position: absolute;
+  right: 20px;
+  z-index: 3;
+}
+#legend > p {
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#header-form-div {
+  position: absolute;
+  z-index: 3;
+}
