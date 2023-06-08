@@ -10,14 +10,18 @@
 }
 
 #go-table {
-  width: 90%;
-  position: fixed;
-  bottom: 0;
+  width: 20%;
+  height: 40%;
+  position: absolute;
+  right: 50px;
+  top: 300px;
   margin-left: 5%;
+  margin-bottom: 20px;
   background-color: #FFF;
+  opacity: 0.97;
 }
-th {
-  width: 1.5em;
+th, td {
+  padding: 10px;
 }
 #keyword-input-div {
   margin: 30px;
@@ -50,4 +54,18 @@ th {
 #header-form-div {
   position: absolute;
   z-index: 3;
+}
+
+#deg-table {
+  width: 98%;
+  margin: 0 auto;
+}
+
+#deg-table th {
+  word-break: break-all;
+}
+
+#download-btn, #go-btn {
+  margin: 20px auto;
+  display: block;
 }
