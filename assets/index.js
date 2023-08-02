@@ -100,7 +100,7 @@ import dagre from "cytoscape-dagre";
       ],
       layout: {
         name: "dagre", // Use the dagre layout for a hierarchical tree layout
-        spacingFactor: 1.25,
+        spacingFactor: 1.3,
       },
     });
     cy.zoomingEnabled(true);

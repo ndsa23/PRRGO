@@ -113,10 +113,12 @@ def cyto_json(request):
                 sys.stdout.flush()
                 file_str = file.read().decode('utf-8')
                 # print(file_str)
-                df = pd.read_csv(StringIO(file_str), sep=delimiter, index_col=0)
+                df = pd.read_csv(StringIO(file_str), sep=delimiter)
 
                 # Add a prefix to the column names with the filename
                 df = df.add_prefix(f"{file.name[:-4]}_")
+                print(df.columns)
+                sys.stdout.flush()
                 symbol_column = [col for col in df.columns if col.endswith("Symbol") or col.endswith("Description")][0]
                 df = df.rename(columns={symbol_column: "Symbol"})
                 sys.stdout.flush()
@@ -246,10 +248,12 @@ def download(request):
                 # Read the DEG file into a DataFrame
                 file_str = file.read().decode('utf-8')
                 # print(file_str)
-                df = pd.read_csv(StringIO(file_str), sep=delimiter, index_col=0)
+                df = pd.read_csv(StringIO(file_str), sep=delimiter)
 
                 # Add a prefix to the column names with the filename
                 df = df.add_prefix(f"{file.name[:-4]}_")
+                print(df.columns)
+                sys.stdout.flush()
                 symbol_column = [col for col in df.columns if col.endswith("Symbol") or col.endswith("Description")][0]
                 df = df.rename(columns={symbol_column: "Symbol"})
                 dfs.append(df)

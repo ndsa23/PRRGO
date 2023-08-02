@@ -1,3 +1,4 @@
-Django==4.2
-networkx==3.1
-obonet==1.0.0
+Django>=4.0
+networkx>=3.0
+obonet>=1.0.0
+scipy>=1.10
