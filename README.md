@@ -1,7 +1,8 @@
 # 🐈 PageRankeRGO (PRRGO)
 A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
+
 ## Features
-* Produce beautiful GO network visualizations
+* Produce GO network visualizations
 * Find GO terms based on specified keywords
 * Rank important GO terms based on the PageRank algorithm
 * Retrieve GEO2R differential gene expression data for each GO term
@@ -11,7 +12,7 @@ A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
 
 2. Download the project via Github and unzip if necessary.
 
-3. Change the working directory to the project folder.
+3. Open a shell (Command Prompt, PowerShell, Terminal, or other) and change the working directory to the project folder.
 
 4. Check npm packages (these should be pre-installed already, but here they are just in case)
 * `cytoscape-dagre@2.5.0`
@@ -19,7 +20,7 @@ A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
 * `webpack-cli@5.0.1`
 * `webpack@5.78.0`
 
-  You can check installed npm packages with npm list and download them with `npm install [package-name]`
+  You can check installed npm packages with `npm list` and download them with `npm install [package-name]`
 
 5. Install Python: https://www.python.org/downloads/
 * Python version: Python 3.9.6 (or newer)

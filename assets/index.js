@@ -1,7 +1,7 @@
 import cytoscape from "cytoscape";
 import dagre from "cytoscape-dagre";
 (() => {
-  // elements
+  // DOM elements
   const goID = document.body.querySelector("#go-id");
   const goName = document.body.querySelector("#go-name");
   const aspect = document.body.querySelector("#aspect");
@@ -24,6 +24,7 @@ import dagre from "cytoscape-dagre";
     loading.appendChild(node);
 
     const formData = new FormData(goForm);
+    formData.append("isFile", "False")
     const req = new XMLHttpRequest();
 
     // AJAX Handler
@@ -170,6 +171,7 @@ import dagre from "cytoscape-dagre";
     xhr.open("POST", "/download/", true);
     xhr.responseType = "blob"; // Set the response type to blob
     const formData = new FormData(goForm);
+    formData.append("isFile", "True")
     // Set up the callback function for when the request completes
     xhr.onload = function () {
       if (xhr.status === 200) {
