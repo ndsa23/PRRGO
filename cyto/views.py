@@ -76,7 +76,7 @@ def mapGOTerms(request):
         # endConcat = time.perf_counter()
         # print(f"convert2cyto took {endConcat-start:0.4f}")
             print("DONE")
-            mapped_degs = DEGassociator(files, nodes, graph, UPmerged_df)
+            mapped_degs = DEGassociator(files, nodes, UPmerged_df)
         # sys.stdout.flush()
             return JsonResponse({'graph': graph_json, 'go_data': mapped_degs})
         else:
