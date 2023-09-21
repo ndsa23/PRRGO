@@ -25,7 +25,7 @@ A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
 5. Install Python: https://www.python.org/downloads/
 * Python version: Python 3.9.6 (or newer)
 
-6. We recommend installing the following PyPI packages in a virtualenv ([Install](https://virtualenv.pypa.io/en/latest/installation.html), [User Guide](https://virtualenv.pypa.io/en/latest/user_guide.html), [Or using Conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)). Activate your virtual environment, then run `pip install [package-name]` for each of the below:
+6. We recommend installing the following PyPI packages in a virtual environment ([Install](https://virtualenv.pypa.io/en/latest/installation.html), [User Guide](https://virtualenv.pypa.io/en/latest/user_guide.html), [Or using Conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)). Activate the virtual environment, then run `pip install [package-name]` for each of the below:
 * `Django>=4.0`
 * `networkx>=3.0`
 * `obonet>=1.0.0`
