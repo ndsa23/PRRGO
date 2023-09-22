@@ -39,6 +39,9 @@ A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
 * `python manage.py runserver`
 * Open http://127.0.0.1:8000/go-viz in a web browser
 
+9. Close the server:
+* Ctrl-c will exit the server
+
 ## Instructions
 1. Fill out the form with keyword to search for in GO terms or description, number of GO terms to filter by PageRank, and GEO2R DESeq File(s)
 2. Click the "Submit" button. After 15-30 seconds a visualization should appear.
