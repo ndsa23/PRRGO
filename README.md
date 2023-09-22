@@ -25,7 +25,7 @@ A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
 5. Install Python: https://www.python.org/downloads/
 * Python version: Python 3.9.6 (or newer)
 
-6. Install the following PyPI packages in a virtualenv ([Install](https://virtualenv.pypa.io/en/latest/installation.html), [User Guide](https://virtualenv.pypa.io/en/latest/user_guide.html)). Run `pip install [package-name]` for each of the below:
+6. We recommend installing the following PyPI packages in a virtual environment ([Install](https://virtualenv.pypa.io/en/latest/installation.html), [User Guide](https://virtualenv.pypa.io/en/latest/user_guide.html), [Or using Conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)). Activate the virtual environment, then run `pip install [package-name]` for each of the below:
 * `Django>=4.0`
 * `networkx>=3.0`
 * `obonet>=1.0.0`
@@ -38,6 +38,9 @@ A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
 8. Run the server:
 * `python manage.py runserver`
 * Open http://127.0.0.1:8000/go-viz in a web browser
+
+9. Close the server:
+* Ctrl-c will exit the server
 
 ## Instructions
 1. Fill out the form with keyword to search for in GO terms or description, number of GO terms to filter by PageRank, and GEO2R DESeq File(s)
