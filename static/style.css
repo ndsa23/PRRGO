@@ -1,3 +1,6 @@
+html, body {
+  height: 100%;
+}
 * {
   font-size: 1.025em;
 }
@@ -5,8 +8,9 @@
   margin: 30px;
 }
 #cy {
+  display: block;
   width: auto;
-  height: 1000px;
+  min-height: 80%;
 }
 
 #go-table {
@@ -22,6 +26,7 @@
 }
 th, td {
   padding: 10px;
+  max-height: 20rem;
 }
 #keyword-input-div {
   margin: 30px;
@@ -68,4 +73,14 @@ th, td {
 #download-btn, #go-btn {
   margin: 20px auto;
   display: block;
+}
+
+#definition-div {
+  width: 100%;
+  height: 100%;
+  max-height: 20rem;
+  min-height: 10rem;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }

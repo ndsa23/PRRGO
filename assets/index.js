@@ -5,7 +5,7 @@ import dagre from "cytoscape-dagre";
   const goID = document.body.querySelector("#go-id");
   const goName = document.body.querySelector("#go-name");
   const aspect = document.body.querySelector("#aspect");
-  const definition = document.body.querySelector("#definition");
+  const definitionDiv = document.body.querySelector("#definition-div");
   const pagerank = document.body.querySelector("#pagerank");
   const keywordInputBtn = document.body.querySelector("#keyword-input-btn");
   const keywordInput = document.body.querySelector("#keyword-input");
@@ -113,8 +113,9 @@ import dagre from "cytoscape-dagre";
       goID.textContent = node.data("id");
       goName.textContent = node.data("name");
       aspect.textContent = node.data("aspect");
-      definition.textContent = node.data("definition");
-      pagerank.textContent = node.data("pagerank");
+      definitionDiv.textContent = node.data("definition");
+      // display PageRank in scientific notation with 5 significant figures for readability
+      pagerank.textContent = node.data("pagerank").toExponential(4);
       renderDegTable(node.data("id"));
     });
   }
