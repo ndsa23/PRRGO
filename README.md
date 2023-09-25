@@ -45,7 +45,7 @@ A Gene Ontology (GO) Tool by Nicholas D'Sa and Luis Solano
 ## Instructions
 1. Fill out the form with keyword to search for in GO terms or description, number of GO terms to filter by PageRank, and GEO2R DESeq File(s)
 2. Click the "Submit" button. After 15-30 seconds a visualization should appear.
-3. The size of the GO term nodes is mapped to PageRank score and the color reflects the GO aspect. Click on a GO term node to view the relevant information for a GO term and the DEG data.
+3. The size of the GO term nodes is mapped to PageRank score and the color reflects the GO aspect. Click on a GO term node to view the relevant information for a GO term and the DEG data. Click and drag on the background to pan. Scroll to zoom in/out.
 4. (Optional) Download the GO network graph visualization JPEG file or the GO DEG CSV file by clicking the buttons near the bottom of the page. Note that the JPEG file produced will show all nodes (even those offscreen) and will match the current arrangement of nodes rather than the starting arrangement.
 
 To see documentation for key functions, open the `.html` files in the `docs` folder.
